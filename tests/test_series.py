@@ -1,60 +1,72 @@
 from math_series.series import fibonacci
 from math_series.series import lucas
+from math_series.series import sum_series
 
 def test_0():
-    fb = fibonacci(0)
-    assert 0 == fb
+    output = fibonacci(0)
+    assert 0 == output
 
 def test_1():
-    fb = fibonacci(1)
-    assert 1 == fb
+    output = fibonacci(1)
+    assert 1 == output
 
 def test_2():
-    fb = fibonacci(2)
-    assert 1 == fb
+    output = fibonacci(2)
+    assert 1 == output
 
 def test_3():
-    fb = fibonacci(3)
-    assert 2 == fb
+    output = fibonacci(3)
+    assert 2 == output
 
 def test_4():
-    fb = fibonacci(4)
-    assert 3 == fb
+    output = fibonacci(4)
+    assert 3 == output
 
 def test_5():
-    fb = fibonacci(5)
-    assert 5 == fb
+    output = fibonacci(5)
+    assert 5 == output
 
 def test_6():
-    fb = fibonacci(6)
-    assert 8 == fb
+    output = fibonacci(6)
+    assert 8 == output
 
 
 def test_l_0():
-    fb = lucas(0)
-    assert 2 == fb
+    output = lucas(0)
+    assert 2 == output
 
 def test_l_1():
-    fb = lucas(1)
-    assert 1 == fb
+    output = lucas(1)
+    assert 1 == output
 
 def test_l_2():
-    fb = lucas(2)
-    assert 3 == fb
+    output = lucas(2)
+    assert 3 == output
 
 def test_l_3():
-    fb = lucas(3)
-    assert 4 == fb
+    output = lucas(3)
+    assert 4 == output
 
 def test_l_4():
-    fb = lucas(4)
-    assert 7 == fb
+    output = lucas(4)
+    assert 7 == output
 
 def test_l_5():
-    fb = lucas(5)
-    assert 11 == fb
+    output = lucas(5)
+    assert 11 == output
 
 def test_l_6():
-    fb = lucas(6)
-    assert 18 == fb
+    output = lucas(6)
+    assert 18 == output
 
+def test_both_1():
+    output = sum_series(0)
+    assert 0 == output
+
+def test_both_2():
+    output = sum_series(0,2,1)
+    assert 2 == output
+
+def test_both_3():
+    output = sum_series(0,0,1)
+    assert 0 == output
